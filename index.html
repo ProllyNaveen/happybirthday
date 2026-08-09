@@ -854,6 +854,7 @@ function spawnBalloons() {
 
 // =============== HAPPY BIRTHDAY SONG (Web Audio API) ===============
 // Public domain since 2016 — generated locally, no audio file needed.
+setInterval(playHappyBirthday, 12000);
 function playHappyBirthday() {
   // Some browsers require user interaction for audio. The click on Open counts.
   const AudioCtx = window.AudioContext || window.webkitAudioContext;
