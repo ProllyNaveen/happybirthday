@@ -250,7 +250,7 @@
 
   .title {
     font-family: 'Caprasimo', serif;
-    font-size: clamp(44px, 8vw, 96px);
+    font-size: clamp(36px, min(8vw, 12vh), 96px);
     line-height: 0.95;
     color: var(--primary);
     text-shadow:
@@ -477,7 +477,7 @@
   /* Message card */
   .message {
     position: absolute;
-    top: 50%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-2deg);
     width: clamp(260px, 32vw, 380px);
@@ -648,6 +648,7 @@
       width: 60px;
     }
   }
+  
 </style>
 </head>
 <body>
@@ -666,7 +667,7 @@
 
   <div class="envelope" id="envelope">
     <div class="envelope-flap"></div>
-    <div class="wax-seal">N</div>
+    <div class="wax-seal"></div>
     <p class="letter-preview">to: <span id="preview-name">friend</span></p>
   </div>
 
@@ -705,7 +706,7 @@
   </div>
 
   <div class="signature">
-    <p class="from">with so much love <span class="heart">♥</span></p>
+    <p class="from">Your dumbass <span class="heart">,</span></p>
     <p class="name" id="your-name">Naveen</p>
   </div>
 
@@ -717,16 +718,16 @@
    ================================================================ */
 const CONFIG = {
   // Your friend's name
-  friendName: "Sarah",
+  friendName: "Loku Ayya",
 
   // Your name (shows at the bottom)
-  yourName: "Naveen",
+  yourName: "Podi Malli",
 
   // The wax seal initial on the envelope (usually your first letter)
-  sealInitial: "N",
+  sealInitial: ":)",
 
   // Personal message in the floating card
-  message: "May your year ahead be packed with laughter, adventure, and all the cake you can eat. So grateful to know you 🎂",
+  message: "May your life ahead be packed with happiness and whatever the fk u want. So grateful to have u.\nU r slowly becoming an UNC bro XD",
 
   // Subtitle below "Happy Birthday"
   subtitle: "wishing you the most wonderful day",
